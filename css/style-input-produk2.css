@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: whitesmoke;
+    padding: 10px;
+    margin-left: 60px;
+    height: 100vh;
+    width: auto;
+    overflow-x: hidden;
+}
+
+.h {
+    margin-left: 20px;
+}
+
+
+.card {
+    display: grid;
+    gap: .65rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    height: auto;
+    width: auto;
+    background: transparent;
+    border: none !important;
+}
+
+.card-body {
+    height: auto;
+    aspect-ratio: 0.5 / 0.5;
+    text-align: justify;
+    background: #D1E4E9;
+    border: none;
+    border-radius: 15px;
+    width: auto;
+
+    box-shadow:
+        1.3px 1.4px 1.9px rgba(0, 0, 0, 0.013),
+        2.9px 3px 4.3px rgba(0, 0, 0, 0.019),
+        4.8px 5.1px 7.7px rgba(0, 0, 0, 0.023),
+        7.6px 8px 12.8px rgba(0, 0, 0, 0.027),
+        11.8px 12.4px 21.2px rgba(0, 0, 0, 0.031),
+        19.1px 20.1px 37px rgba(0, 0, 0, 0.037),
+        38px 40px 80px rgba(0, 0, 0, 0.05)
+    ;
+
+
+}
+
+.label-group {
+    border: solid 1px whitesmoke;
+    padding-inline: 1rem;
+}
+
+.form-check {
+    margin: 3px;
+}
+
+.form-check-label {
+    margin-inline: 13px;
+    /* border: 3px solid; */
+}
+
+.form-label {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: auto;
+    align-content: center;
+}
+
+.btn-group {
+    background: transparent ;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 5px;    
+    align-content: center;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.button {
+    border: 0 !important;
+    margin-left: 3px;
+    transition: 0.5s;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    z-index: 1;
+}
+.button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:hover {
+    color: #ffffff;
+    border: solid #BDBDBD 4px;
+}
+
+.button:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+.button:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}

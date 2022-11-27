@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 30px;
+    width: 100%;
+    height: 50vh;
+    overflow: auto;
+    flex-direction: column;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    background: #6DE5FF;
+    border: 0 !important;
+    border-radius: 10px;
+}
+
+.input:hover {
+    transition: 0.5s;
+    background: whitesmoke;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border: 0 !important;
+    border-radius: 10px;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.btn1:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.btn1:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+}
+
+.btn1:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.btn1:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}

@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    scroll-behavior: smooth;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin: 3px;
+}
+
+.button-group .btn {
+    margin: 2px;
+}
+
+
+img { 
+    width: 220vh;
+    height: 120vh;
+    background: center;
+    background-size: large;
+    align-items: center;
+    align-items: center;
+}
+
+.parent {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 2 / 2 / 4 / 4;
+        height: 100%;
+        width: 50%;
+        border-radius: 20px;
+        background: #4b4b4b;
+    }
+    .div2 { grid-area: 2 / 5 / 4 / 7; 
+        border-radius: 20px;
+        background: #4b4b4b;
+    }
+    .div3 { grid-area: 2 / 8 / 4 / 10;
+        border-radius: 20px; 
+        background: #4b4b4b;
+    }
+
+.satu {
+    background: whitesmoke;
+}
+
+.dua {
+    background: aquamarine;
+}
+
+.tiga {
+    background: gray;
+}

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: whitesmoke;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card {
+    background: #D1E4E9;
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: auto;
+}
+
+.card-header {
+    overflow: hidden;
+    width: auto;
+}
+
+.card-body {
+    background: #D1E4E9;
+    overflow: hidden;
+    width: auto;
+}
+
+.show-gambar {
+    height: 50px;
+    width: 50px;
+}
+
+
+.btn {
+    border: 0 !important;
+    margin-left: 3px;
+    transition: 0.5s;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    z-index: 1;
+}
+
+.btn-group {
+    width: auto;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.btn:hover {
+    color: #ffffff;
+    border: solid #BDBDBD 4px;
+}
+
+.btn:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+.btn:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}

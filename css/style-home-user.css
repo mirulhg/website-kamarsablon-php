@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: #D1E4E9;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow-x: hidden;
+    margin-left: 60px;
+}
+
+h6 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.logo {
+    display: block;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+.content {
+    background: white;
+    align-self: end;
+    height: auto;
+}
+
+.card__title {
+    font-size: 1.75;
+    line-height: 1.5;
+}
+
+.icon {
+    max-width: 100%;
+    display: block;
+}
+
+
+.icons {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.stacked {
+    display: block;
+}
+
+.stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.card__p {
+    font-size: clamp(20px, 2vw, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: .65rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    height: auto;
+    width: auto;
+}
+
+.grid-1 {
+    height: 100%;
+    aspect-ratio: 1 / 1.5;
+    text-align: justify;
+    background: white;
+    border: solid 2px;
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px;
+
+    box-shadow:
+        1.3px 1.4px 1.9px rgba(0, 0, 0, 0.013),
+        2.9px 3px 4.3px rgba(0, 0, 0, 0.019),
+        4.8px 5.1px 7.7px rgba(0, 0, 0, 0.023),
+        7.6px 8px 12.8px rgba(0, 0, 0, 0.027),
+        11.8px 12.4px 21.2px rgba(0, 0, 0, 0.031),
+        19.1px 20.1px 37px rgba(0, 0, 0, 0.037),
+        38px 40px 80px rgba(0, 0, 0, 0.05)
+    ;
+    
+}
+
+.mading-harga {
+    display: grid;
+    gap: .65rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    height: auto;
+    width: auto;
+}
+
+.grid-satu, .grid-dua, .grid-tiga {
+    height: 100%;
+    aspect-ratio: 1 / 0.5;
+    text-align: justify;
+    font-size: medium;
+    background: white;
+    border: solid 2px;
+    border-radius: 15px;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+
+    box-shadow:
+        1.3px 1.4px 1.9px rgba(0, 0, 0, 0.013),
+        2.9px 3px 4.3px rgba(0, 0, 0, 0.019),
+        4.8px 5.1px 7.7px rgba(0, 0, 0, 0.023),
+        7.6px 8px 12.8px rgba(0, 0, 0, 0.027),
+        11.8px 12.4px 21.2px rgba(0, 0, 0, 0.031),
+        19.1px 20.1px 37px rgba(0, 0, 0, 0.037),
+        38px 40px 80px rgba(0, 0, 0, 0.05)
+    ;
+}
+
+.tampil {
+    display: grid;
+    gap: .65rem;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    height: auto;
+    width: auto;
+    background: #D1E4E9;
+}
+
+.tampil1 {
+    height: auto;
+    aspect-ratio: 1 / .5;
+    text-align: justify;
+    background: whitesmoke;
+    border: solid 2px;
+    border-radius: 12px;
+    width: 100%;
+    padding: 10px;
+
+    box-shadow:
+        1.3px 1.4px 1.9px rgba(0, 0, 0, 0.013),
+        2.9px 3px 4.3px rgba(0, 0, 0, 0.019),
+        4.8px 5.1px 7.7px rgba(0, 0, 0, 0.023),
+        7.6px 8px 12.8px rgba(0, 0, 0, 0.027),
+        11.8px 12.4px 21.2px rgba(0, 0, 0, 0.031),
+        19.1px 20.1px 37px rgba(0, 0, 0, 0.037),
+        38px 40px 80px rgba(0, 0, 0, 0.05)
+    ;
+
+}
+
+.form-group {
+    padding-inline: 5rem;
+}
+
+.judul {
+    text-align: center;
+}
+
+.sesi-2 {
+    margin-bottom: 30px;
+}
+
+.sesi-4 {
+    margin-bottom: 15px;
+    width: 100%;
+}
